@@ -1,7 +1,15 @@
+import { ICON } from 'presentation/assets';
+
+import { Container } from './topbarStyled';
+
 export const Topbar = () => {
   return (
-    <div>
-      <h4>Precisa de ajuda? </h4>
-    </div>
+    <Container>
+      <div>
+        <h4>
+          Precisa de ajuda? <ICON.BsTelephoneInboundFill />
+        </h4>
+      </div>
+    </Container>
   );
 };

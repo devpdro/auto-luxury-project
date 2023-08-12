@@ -3,8 +3,9 @@ import React, { ReactNode } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const theme = {
-  colors: {
-    primary: 'blue',
+  width: {
+    standard: '1280px',
+    margin: '0 auto',
   },
 };
 
