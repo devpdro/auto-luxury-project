@@ -1,2 +1,2 @@
-export * from './routes';
-export * from './providers';
+export * from './routes/app-routes';
+export * from './providers/theme';

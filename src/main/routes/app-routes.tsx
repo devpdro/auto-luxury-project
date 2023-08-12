@@ -5,7 +5,7 @@ import {
   Navigate,
 } from 'react-router-dom';
 
-import { Theme } from 'main/providers';
+import { Theme } from 'main/providers/theme';
 import { Home } from 'presentation/pages';
 
 export const AppRoutes: React.FC = () => {
