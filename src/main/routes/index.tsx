@@ -5,17 +5,18 @@ import {
   Navigate,
 } from 'react-router-dom';
 
-import { Home } from '../../presentation/pages';
+import { Theme } from 'main/providers';
+import { Home } from 'presentation/pages';
 
-const AppRoutes: React.FC = () => {
+export const AppRoutes: React.FC = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="*" element={<Navigate to="/home" />} />
-      </Routes>
-    </Router>
+    <Theme>
+      <Router>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="*" element={<Navigate to="/home" />} />
+        </Routes>
+      </Router>
+    </Theme>
   );
 };
-
-export default AppRoutes;
