@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: #09071d;
   color: #fff;
-  padding: 0.9rem 0;
+  padding: 1rem 0;
 `;
 
 export const Width = styled.div`
@@ -16,17 +16,18 @@ export const Box = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
+  padding: 0 1rem;
   span {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 `;
 
 export const Help = styled.div`
   display: flex;
-  h4 {
-    padding: 0 1rem;
+  span {
+    padding-left: 1rem;
   }
 `;
 
@@ -35,10 +36,10 @@ export const Login = styled.div`
   div {
     display: flex;
     span {
-      padding-left: 0.8rem;
+      padding-left: 1.5rem;
     }
     h4 {
-      padding: 0 1rem 0 0.3rem;
+      padding-left: 0.3rem;
     }
   }
 `;

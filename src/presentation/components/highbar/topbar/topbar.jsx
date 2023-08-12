@@ -1,6 +1,6 @@
 import { ICON } from 'presentation/assets';
 
-import { Container, Width, Box, Help, Login } from './Topbar-Styled';
+import { Container, Width, Box, Help, Login } from './topbar-styled';
 
 export const Topbar = () => {
   return (

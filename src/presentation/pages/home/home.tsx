@@ -1,9 +1,9 @@
-import { Topbar } from 'presentation/components';
+import { Navbar } from 'presentation/components';
 
 export const Home = () => {
   return (
     <>
-      <Topbar />
+      <Navbar />
     </>
   );
 };
