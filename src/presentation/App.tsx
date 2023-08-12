@@ -1,10 +1,5 @@
-import { IMAGES } from './assets';
+import AppRoutes from '../main/routes';
 
 export const App = () => {
-  return (
-    <div className="container">
-      <img src={IMAGES.FEATURED1} alt="" />
-      <h1>Olá</h1>
-    </div>
-  );
+  return <AppRoutes />;
 };
