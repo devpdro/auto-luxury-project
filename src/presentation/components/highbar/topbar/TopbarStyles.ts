@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #fff;
-  color: #8257e5;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.primary};
+  border-bottom: 2px solid #6550f3;
+  font-weight: 700;
   position: fixed;
   width: 100vw;
   z-index: 1;
-  padding: 1.5rem 0;
-  border-bottom: 3px solid #8257e5;
+  padding: 1.5rem 0rem;
 `;
 
 export const Width = styled.div`
@@ -20,29 +21,19 @@ export const Box = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  padding: 0 1rem;
   span {
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
-  }
-`;
-
-export const Help = styled.div`
-  display: flex;
-  span {
-    padding-left: 1rem;
+    font-size: 1.5rem;
   }
 `;
 
 export const Navbar = styled.ul`
   display: flex;
+  list-style: none;
   li {
-    text-align: center;
-    display: flex;
-    margin-left: 2rem;
-    font-weight: 600;
-    list-style: none;
+    color: ${({ theme }) => theme.colors.primary};
+    margin-left: 0.9rem;
   }
 `;
 
@@ -51,10 +42,10 @@ export const Login = styled.div`
   div {
     display: flex;
     span {
-      padding-left: 1.5rem;
+      padding-left: 1.4rem;
     }
     h4 {
-      padding-left: 0.3rem;
+      padding-left: 0.2rem;
     }
   }
 `;

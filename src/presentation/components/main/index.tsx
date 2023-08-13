@@ -1,6 +1,7 @@
-import { About } from './about/about';
+import { About } from './about/About';
 import { Cars } from './cars/cars';
-import { Header } from './header/header';
+import { Header } from './header/Header';
+import { Questions } from './questions/questions';
 
 export const Main = () => {
   return (
@@ -8,6 +9,7 @@ export const Main = () => {
       <Header />
       <About />
       <Cars />
+      <Questions />
     </main>
   );
 };

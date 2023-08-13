@@ -1,18 +1,12 @@
 import { ICON } from 'presentation/assets';
 
-import { Container, Width, Box, Help, Navbar, Login } from './topbar-styled';
+import { Container, Width, Box, Navbar, Login } from './TopbarStyles';
 
 export const Topbar = () => {
   return (
     <Container>
       <Width>
         <Box>
-          <Help>
-            <h4>Precisa de ajuda?</h4>
-            <span>
-              <ICON.BsTelephoneInboundFill />
-            </span>
-          </Help>
           <Navbar>
             <li>Início</li>
             <li>Carros</li>

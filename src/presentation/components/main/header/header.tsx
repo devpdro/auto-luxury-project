@@ -8,8 +8,7 @@ import {
   Input,
   Details,
   Reserve,
-  Img,
-} from './header-styled';
+} from './HeaderStyles';
 
 export const Header = () => {
   return (
@@ -17,16 +16,16 @@ export const Header = () => {
       <Width>
         <Box>
           <Text>
-            <h4>Reservar agora</h4>
-            <h1>Porsche 911</h1>
+            <h1>Porsche 911 Carrera</h1>
+            <h4>Reserve agora e sinta a emoção</h4>
           </Text>
           <Input>
             <Details type="submit" value="Exibir detalhes" />
             <Reserve type="submit" value="Reservar agora" />
           </Input>
-          <Img>
+          <div>
             <img src={IMAGES.POPULAR5} alt="Porsche" />
-          </Img>
+          </div>
         </Box>
       </Width>
     </Container>

@@ -7,7 +7,7 @@ import {
   Reserve,
   Location,
   Time,
-} from './information-styled';
+} from './InformationStyles';
 
 export const Information = () => {
   return (
@@ -19,8 +19,8 @@ export const Information = () => {
               <ICON.IoCarSportSharp />
             </span>
             <div>
-              <h2>Aluguel de Carros</h2>
-              <p>200$ - 8300$</p>
+              <h2>Alugar</h2>
+              <p>Diferentes preços</p>
             </div>
           </Reserve>
           <Location>
@@ -37,8 +37,8 @@ export const Information = () => {
               <ICON.BiTimeFive />
             </span>
             <div>
-              <h2>Terça-Feira</h2>
-              <p>8h - 18h</p>
+              <h2>Horarios</h2>
+              <p>10h - 19h</p>
             </div>
           </Time>
         </Box>

@@ -8,7 +8,16 @@ const theme = {
     margin: '0 auto',
   },
   colors: {
-    backgroundMax: 'red',
+    primary: '#1E1E1F',
+    secondary: '#fff',
+    tertiary: '#6550F3',
+    quaternary: '#201e1e',
+    quinary: '#dedde3',
+    senary: '#000',
+    septenary: '#7e7e7e',
+    octonary: '#000',
+    nonary: '#000',
+    denary: '#000',
   },
 };
 
@@ -17,8 +26,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat";
-    
+    font-family: "Poppins";
   }
 `;
 
