@@ -1,4 +1,5 @@
 import { About } from './about/about';
+import { Cars } from './cars/cars';
 import { Header } from './header/header';
 
 export const Main = () => {
@@ -6,6 +7,7 @@ export const Main = () => {
     <main>
       <Header />
       <About />
+      <Cars />
     </main>
   );
 };
