@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #09071d;
-  color: #fff;
-  padding: 1rem 0;
+  background-color: #fff;
+  color: #8257e5;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #8257e5;
 `;
 
 export const Width = styled.div`
@@ -28,6 +32,17 @@ export const Help = styled.div`
   display: flex;
   span {
     padding-left: 1rem;
+  }
+`;
+
+export const Navbar = styled.ul`
+  display: flex;
+  li {
+    text-align: center;
+    display: flex;
+    margin-left: 2rem;
+    font-weight: 600;
+    list-style: none;
   }
 `;
 

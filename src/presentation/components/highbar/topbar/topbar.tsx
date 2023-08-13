@@ -1,6 +1,6 @@
 import { ICON } from 'presentation/assets';
 
-import { Container, Width, Box, Help, Login } from './topbar-styled';
+import { Container, Width, Box, Help, Navbar, Login } from './topbar-styled';
 
 export const Topbar = () => {
   return (
@@ -13,6 +13,11 @@ export const Topbar = () => {
               <ICON.BsTelephoneInboundFill />
             </span>
           </Help>
+          <Navbar>
+            <li>Início</li>
+            <li>Carros</li>
+            <li>Sobre</li>
+          </Navbar>
           <Login>
             <div>
               <span>
