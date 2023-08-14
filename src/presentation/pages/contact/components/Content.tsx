@@ -4,7 +4,7 @@ import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-import { Container, Width, Box, Map, Text } from './ContentStyles';
+import { Container, Width, Box, Information, Text } from './ContentStyles';
 
 type FormData = {
   name: string;
@@ -35,7 +35,13 @@ export const Content: React.FC = () => {
     <Container>
       <Width>
         <Box>
-          <Map />
+          <Information>
+            <h1>Informações de contato</h1>
+            <h4>Auto Luxury</h4>
+            <p>Rua 7, 1771 - Zona Central</p>
+            <p>CEP: 13500-200 - RIO CLARO/SP</p>
+            <p>(19) 99805-4440</p>
+          </Information>
           <Text>
             <h1>Entre em contato</h1>
             <form onSubmit={handleSubmit(onSubmit)}>

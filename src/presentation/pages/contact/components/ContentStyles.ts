@@ -13,18 +13,12 @@ export const Width = styled.div`
 
 export const Box = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   margin-top: 4rem;
 `;
 
-export const Map = styled.div`
-  margin-right: 4rem;
-  padding: 1rem 0rem 1rem 1rem;
-  position: relative;
-  max-height: 500px;
-  width: 100%;
-`;
+export const Information = styled.div``;
 
 export const Text = styled.div`
   h1 {

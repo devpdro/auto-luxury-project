@@ -14,7 +14,7 @@ export const Content = () => {
       <Width>
         <Box>
           <Form>
-            <h1>Conecte-se</h1>
+            <h1>Conectar</h1>
             <p>Entrar com e-mail e senha</p>
             <Email>
               <label htmlFor="email1">E-mail:</label>
@@ -25,7 +25,12 @@ export const Content = () => {
               <input type="password" name="password" id="password1" />
             </Password>
             <Submit>
-              <input type="submit" name="submit" id="submit1" />
+              <input
+                type="submit"
+                name="submit"
+                id="submit1"
+                value="Conectar"
+              />
             </Submit>
           </Form>
         </Box>
