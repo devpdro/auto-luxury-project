@@ -31,14 +31,29 @@ export const Box = styled.div`
 export const Reserve = styled.div`
   display: flex;
   align-items: center;
+  transition: all 0.4s ease;
+  &:hover {
+    color: ${({ theme }) => theme.colors.tertiary};
+    transform: scale(1.1);
+  }
 `;
 
 export const Location = styled.div`
   display: flex;
   align-items: center;
+  transition: all 0.4s ease;
+  &:hover {
+    color: ${({ theme }) => theme.colors.tertiary};
+    transform: scale(1.1);
+  }
 `;
 
 export const Time = styled.div`
   display: flex;
   align-items: center;
+  transition: all 0.4s ease;
+  &:hover {
+    color: ${({ theme }) => theme.colors.tertiary};
+    transform: scale(1.1);
+  }
 `;

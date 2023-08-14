@@ -23,9 +23,11 @@ export const Options = styled.div`
 
 export const Details = styled.div`
   text-align: center;
-  margin: 0 1rem;
-  border: 1px solid red;
-  margin-bottom: 1rem;
+  margin: 0rem 1rem 2rem 1rem;
+  padding: 2rem;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   h1 {
     font-size: 1.5rem;
   }

@@ -34,6 +34,11 @@ export const Navbar = styled.ul`
   li {
     color: ${({ theme }) => theme.colors.primary};
     margin-left: 0.9rem;
+    transition: all 0.4s ease;
+    &:hover {
+      color: ${({ theme }) => theme.colors.tertiary};
+      transform: scale(1.1);
+    }
   }
 `;
 
@@ -46,6 +51,11 @@ export const Login = styled.div`
     }
     h4 {
       padding-left: 0.2rem;
+    }
+    transition: all 0.4s ease;
+    &:hover {
+      color: ${({ theme }) => theme.colors.tertiary};
+      transform: scale(1.1);
     }
   }
 `;

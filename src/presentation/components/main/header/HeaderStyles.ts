@@ -51,7 +51,14 @@ export const Details = styled.input`
   padding: 0.6rem 1.3rem;
   border: 2px solid #6550f3;
   border-radius: 25px;
+  transition: all 0.4s ease;
   font-weight: 700;
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.tertiary};
+    color: ${({ theme }) => theme.colors.secondary};
+    transform: scale(1.1);
+    font-weight: 300 !important;
+  }
 `;
 
 export const Reserve = styled.input`
@@ -61,4 +68,8 @@ export const Reserve = styled.input`
   border-radius: 25px;
   border: 2px solid #6550f3;
   outline: none;
+  transition: all 0.4s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;

@@ -19,8 +19,9 @@ export const Box = styled.div`
 `;
 
 export const Text = styled.div`
-  max-width: 600px;
+  max-width: 700px;
   h1 {
+    color: ${({ theme }) => theme.colors.tertiary};
     display: flex;
     align-items: center;
     font-size: 1.8rem;
@@ -40,6 +41,7 @@ export const Links = styled.div`
 export const Quicklinks = styled.div`
   h1 {
     font-size: 1.8rem;
+    color: ${({ theme }) => theme.colors.tertiary};
   }
   ul {
     list-style: none;
@@ -50,6 +52,7 @@ export const Contact = styled.div`
   padding-left: 5rem;
   h1 {
     font-size: 1.8rem;
+    color: ${({ theme }) => theme.colors.tertiary};
   }
   ul {
     list-style: none;
