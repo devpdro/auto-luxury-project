@@ -1,4 +1,4 @@
-import { AiOutlineSchedule } from 'react-icons/ai';
+import { AiOutlineSchedule, AiOutlineSearch } from 'react-icons/ai';
 import { BiTimeFive } from 'react-icons/bi';
 import { BsTelephoneInboundFill } from 'react-icons/bs';
 import { FiArrowRightCircle } from 'react-icons/fi';
@@ -16,4 +16,5 @@ export const ICON = {
   AiOutlineSchedule,
   IoCarSportOutline,
   MdOutlineWorkspacePremium,
+  AiOutlineSearch,
 };

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-import { Container, Width, Box, Details } from './search-styled';
+import { ICON } from 'presentation/assets';
+
+import { Container, Width, Box, Details, Reserve } from './SearchStyles';
 
 interface Filters {
   make: string;
@@ -27,7 +29,8 @@ export const Search: React.FC<SearchProps> = ({ onSearch }) => {
     <Container>
       <Width>
         <Box>
-          <h1>Pesquisar por carros?</h1>
+          <h4>Pesquisar pelos melhores carros</h4>
+          <h1>Qual veículo você está procurando?</h1>
           <div>
             <Details
               type="text"
@@ -53,9 +56,12 @@ export const Search: React.FC<SearchProps> = ({ onSearch }) => {
               value={price}
               onChange={(e) => setPrice(e.target.value)}
             />
-            <button type="button" onClick={handleSearch}>
+            <Reserve type="button" onClick={handleSearch}>
+              <span>
+                <ICON.AiOutlineSearch />
+              </span>
               Pesquisar
-            </button>
+            </Reserve>
           </div>
         </Box>
       </Width>

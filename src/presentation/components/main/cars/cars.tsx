@@ -2,9 +2,17 @@ import React, { useState } from 'react';
 
 import { getCarImage } from 'presentation/assets';
 
-import { Container, Width, Box } from './cars-styled';
-import { Search } from './components/search';
-import { Filters } from './components/search';
+import {
+  Container,
+  Width,
+  Box,
+  Options,
+  Details,
+  Text,
+  Button,
+} from './CarsStyles';
+import { Search } from './components/Search';
+import { Filters } from './components/Search';
 
 interface Car {
   make: string;
@@ -15,6 +23,8 @@ interface Car {
 
 const carData: Car[] = [
   { make: 'Toyota', model: 'Corolla', year: 2022, price: 25000 },
+  { make: 'Porsche', model: 'Gol', year: 2021, price: 22000 },
+  { make: 'Gol', model: 'Civic', year: 2021, price: 22000 },
   { make: 'Honda', model: 'Civic', year: 2021, price: 22000 },
 ];
 
@@ -39,15 +49,25 @@ export const Cars: React.FC = () => {
       <Width>
         <Box>
           <Search onSearch={handleSearch} />
-          <div>
+          <Options>
             {filteredCars.map((car, index) => (
-              <img
-                key={index}
-                src={getCarImage(car.make)}
-                alt={`Car ${index}`}
-              />
+              <Details key={index}>
+                <img
+                  key={index}
+                  src={getCarImage(car.make)}
+                  alt={`Car ${index}`}
+                />
+                <h1>Tesla Malibu</h1>
+                <h5>Preço</h5>
+                <Text>
+                  <p>sasda</p>
+                  <p>asda</p>
+                  <p>asda</p>
+                </Text>
+                <Button>Reservar</Button>
+              </Details>
             ))}
-          </div>
+          </Options>
         </Box>
       </Width>
     </Container>

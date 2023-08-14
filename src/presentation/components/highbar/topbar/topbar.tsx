@@ -8,22 +8,22 @@ export const Topbar = () => {
       <Width>
         <Box>
           <Navbar>
-            <li>Início</li>
-            <li>Carros</li>
-            <li>Sobre</li>
+            <li>Home</li>
+            <li>Localização</li>
+            <li>Contato</li>
           </Navbar>
           <Login>
             <div>
               <span>
                 <ICON.FiArrowRightCircle />
               </span>
-              <h4>Login</h4>
+              <h4>Conectar</h4>
             </div>
             <div>
               <span>
                 <ICON.MdOutlinePerson />
               </span>
-              <h4>Register</h4>
+              <h4>Cadastrar</h4>
             </div>
           </Login>
         </Box>
