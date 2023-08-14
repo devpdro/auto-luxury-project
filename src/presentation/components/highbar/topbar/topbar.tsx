@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { ICON } from 'presentation/assets';
 
 import { Container, Width, Box, Navbar, Login } from './TopbarStyles';
@@ -8,9 +10,15 @@ export const Topbar = () => {
       <Width>
         <Box>
           <Navbar>
-            <li>Home</li>
-            <li>Localização</li>
-            <li>Contato</li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/localizacao">
+              <li>Localização</li>
+            </Link>
+            <Link to="/contato">
+              <li>Contato</li>
+            </Link>
           </Navbar>
           <Login>
             <div>

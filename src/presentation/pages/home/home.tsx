@@ -5,7 +5,7 @@ export const Home = () => {
     <>
       <Navbar />
       <Main />
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };

@@ -7,7 +7,7 @@ export const Container = styled.div`
   font-weight: 700;
   position: fixed;
   width: 100vw;
-  z-index: 1;
+  z-index: 999;
   padding: 1.5rem 0rem;
 `;
 
@@ -31,13 +31,20 @@ export const Box = styled.div`
 export const Navbar = styled.ul`
   display: flex;
   list-style: none;
-  li {
-    color: ${({ theme }) => theme.colors.primary};
-    margin-left: 0.9rem;
+  a {
+    text-decoration: none;
     transition: all 0.4s ease;
     &:hover {
       color: ${({ theme }) => theme.colors.tertiary};
       transform: scale(1.1);
+    }
+    li {
+      color: ${({ theme }) => theme.colors.primary};
+      margin-left: 0.9rem;
+      transition: all 0.4s ease;
+      &:hover {
+        color: ${({ theme }) => theme.colors.tertiary};
+      }
     }
   }
 `;

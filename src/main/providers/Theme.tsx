@@ -22,12 +22,22 @@ const theme = {
 };
 
 const GlobalStyles = createGlobalStyle`
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins";
   }
+  
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6550F3;
+  border-radius: 15px;
+  height: 20px;
+}
 `;
 
 interface ThemeProps {
