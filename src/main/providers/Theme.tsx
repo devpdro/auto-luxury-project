@@ -15,9 +15,9 @@ const theme = {
     quinary: '#dedde3',
     senary: '#000',
     septenary: '#7e7e7e',
-    octonary: '#000',
-    nonary: '#000',
-    denary: '#000',
+    octonary: '',
+    nonary: '',
+    denary: '',
   },
 };
 

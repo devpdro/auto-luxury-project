@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Container, Width, Box, Title, Answer, Line } from './questions-styled';
+import { Container, Width, Box, Title, Answer, Line } from './QuestionsStyles';
 
 interface QUESTIONSItem {
   question: string;

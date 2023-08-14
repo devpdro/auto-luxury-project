@@ -8,7 +8,7 @@ import {
   Links,
   Quicklinks,
   Contact,
-} from './footer-styled';
+} from './FooterStyles';
 
 export const Footer = () => {
   return (
