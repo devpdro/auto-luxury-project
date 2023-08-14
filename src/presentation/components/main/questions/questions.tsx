@@ -1,14 +1,28 @@
-import { Container, Width, Box } from './questions-styled';
+import React, { useState } from 'react';
+
+import { Container, Width, Box, Title } from './questions-styled';
 
 export const Questions = () => {
+  const [showText, setShowText] = useState(false);
+
+  const toggleText = () => {
+    setShowText(!showText);
+  };
   return (
     <Container>
       <Width>
+        <Title>
+          <h4>Tirando dúvidas</h4>
+          <h1>Perguntas frequentes feitas pelos clientes</h1>
+        </Title>
         <Box>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In veritatis
-          harum consequatur perspiciatis asperiores earum alias fugit quod
-          mollitia. Quas dignissimos distinctio reiciendis suscipit, repellendus
-          incidunt repudiandae assumenda dolorem quam?
+          <h1 onClick={toggleText}>Quais são as formas de pagamento</h1>
+          {showText && (
+            <p>
+              Aqui está a resposta para a pergunta frequente sobre formas de
+              pagamento.
+            </p>
+          )}
         </Box>
       </Width>
     </Container>
