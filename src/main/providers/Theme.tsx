@@ -6,6 +6,7 @@ const theme = {
   width: {
     standard: '1280px',
     margin: '0 auto',
+    login: '450px',
   },
   colors: {
     primary: '#1E1E1F',
