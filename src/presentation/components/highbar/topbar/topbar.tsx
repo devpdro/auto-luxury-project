@@ -21,18 +21,22 @@ export const Topbar = () => {
             </Link>
           </Navbar>
           <Login>
-            <div>
-              <span>
-                <ICON.FiArrowRightCircle />
-              </span>
-              <h4>Conectar</h4>
-            </div>
-            <div>
-              <span>
-                <ICON.MdOutlinePerson />
-              </span>
-              <h4>Cadastrar</h4>
-            </div>
+            <Link to="/login">
+              <div>
+                <span>
+                  <ICON.FiArrowRightCircle />
+                </span>
+                <h4>Conectar</h4>
+              </div>
+            </Link>
+            <Link to="/register">
+              <div>
+                <span>
+                  <ICON.MdOutlinePerson />
+                </span>
+                <h4>Cadastrar</h4>
+              </div>
+            </Link>
           </Login>
         </Box>
       </Width>
