@@ -27,14 +27,21 @@ export const Map = styled.div`
 `;
 
 export const Text = styled.div`
+  span {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+  }
   h1 {
+    color: ${({ theme }) => theme.colors.tertiary};
     padding-top: 0.7rem;
     font-size: 1.4rem;
   }
   p {
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
   }
   h4 {
+    color: ${({ theme }) => theme.colors.tertiary};
+    margin-top: 1rem;
     font-size: 1.2rem;
   }
 `;

@@ -16,6 +16,10 @@ export const Box = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 5rem;
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.primary};
+  }
   span {
     color: ${({ theme }) => theme.colors.tertiary};
     display: flex;

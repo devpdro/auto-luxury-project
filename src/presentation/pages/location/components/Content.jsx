@@ -1,11 +1,13 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
+import { ICON } from 'presentation/assets';
+
 import { Container, Width, Box, Map, Text } from './ContentStyles';
 
 import 'leaflet/dist/leaflet.css';
 
 export const Content = () => {
-  const position = [-22.4115, -47.5616];
+  const position = [-20.529182, -47.3931428];
 
   return (
     <Container>
@@ -30,13 +32,22 @@ export const Content = () => {
           <Text>
             <h1>Nossa localização</h1>
             <p>
-              Nós estamos localizados na Rua 7 número 1771 no bairro Zona
-              Central, cidade de RIO CLARO/SP
+              Nós estamos localizados na Rua Frederico Moura, no Bairro Cidade
+              Nova, cidade de Franca/SP
             </p>
             <h4>Auto Luxury</h4>
-            <p>Rua 7, 1771 - Zona Central</p>
-            <p>CEP: 13500-200 - RIO CLARO/SP</p>
-            <p>(19) 99805-4440</p>
+            <p>
+              <span>
+                <ICON.HiOutlineLocationMarker />
+              </span>
+              Rua Frederico Moura - Cidade Nova <br /> CEP: 14401150 - Franca/SP
+            </p>
+            <p>
+              <span>
+                <ICON.AiOutlineWhatsApp />
+              </span>
+              (19) 99971-5982
+            </p>
           </Text>
         </Box>
       </Width>

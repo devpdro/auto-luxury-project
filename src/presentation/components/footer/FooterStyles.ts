@@ -36,6 +36,10 @@ export const Text = styled.div`
 
 export const Links = styled.div`
   display: flex;
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 export const Quicklinks = styled.div`
@@ -45,16 +49,34 @@ export const Quicklinks = styled.div`
   }
   ul {
     list-style: none;
+    li {
+      transition: all 0.4s ease;
+      &:hover {
+        color: ${({ theme }) => theme.colors.tertiary};
+        transform: scale(1.1);
+      }
+    }
   }
 `;
 
 export const Contact = styled.div`
   padding-left: 5rem;
+  span {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+  }
   h1 {
     font-size: 1.8rem;
     color: ${({ theme }) => theme.colors.tertiary};
   }
   ul {
     list-style: none;
+    li {
+      transition: all 0.4s ease;
+      &:hover {
+        color: ${({ theme }) => theme.colors.tertiary};
+        transform: scale(1.1);
+      }
+    }
   }
 `;

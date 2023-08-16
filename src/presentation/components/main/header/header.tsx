@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { IMAGES } from 'presentation/assets';
 
 import {
@@ -12,7 +14,7 @@ import {
 
 export const Header = () => {
   return (
-    <Container>
+    <Container id="home">
       <Width>
         <Box>
           <Text>
@@ -20,8 +22,12 @@ export const Header = () => {
             <h4>Reserve agora e sinta a emoção</h4>
           </Text>
           <Input>
-            <Details type="submit" value="Exibir detalhes" />
-            <Reserve type="submit" value="Reservar agora" />
+            <a href="#cars">
+              <Details type="submit" value="Exibir detalhes" />
+            </a>
+            <Link to="/contato">
+              <Reserve type="submit" value="Reservar agora" />
+            </Link>
           </Input>
           <div>
             <img src={IMAGES.POPULAR5} alt="Porsche" />

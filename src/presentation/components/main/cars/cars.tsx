@@ -45,7 +45,7 @@ export const Cars: React.FC = () => {
   };
 
   return (
-    <Container>
+    <Container id="cars">
       <Width>
         <Box>
           <Search onSearch={handleSearch} />

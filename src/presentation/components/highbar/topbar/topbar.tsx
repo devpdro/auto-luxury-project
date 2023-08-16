@@ -11,7 +11,7 @@ export const Topbar = () => {
         <Box>
           <Navbar>
             <Link to="/">
-              <li>Home</li>
+              <li>Início</li>
             </Link>
             <Link to="/localizacao">
               <li>Localização</li>
@@ -21,7 +21,7 @@ export const Topbar = () => {
             </Link>
           </Navbar>
           <Login>
-            <Link to="/login">
+            <Link to="/conectar">
               <div>
                 <span>
                   <ICON.FiArrowRightCircle />
@@ -29,7 +29,7 @@ export const Topbar = () => {
                 <h4>Conectar</h4>
               </div>
             </Link>
-            <Link to="/register">
+            <Link to="/cadastrar">
               <div>
                 <span>
                   <ICON.MdOutlinePerson />
