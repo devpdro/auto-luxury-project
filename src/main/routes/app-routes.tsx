@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 
 import { Theme } from 'main/providers/Theme';
-import { Home } from 'presentation/pages';
+import { Home, Reserve } from 'presentation/pages';
 import { Location } from 'presentation/pages';
 import { Contact } from 'presentation/pages';
 import { Register } from 'presentation/pages';
@@ -18,6 +18,7 @@ export const AppRoutes: React.FC = () => {
       <Router>
         <Routes>
           <Route path="/inicio" element={<Home />} />
+          <Route path="/reservas" element={<Reserve />} />
           <Route path="/localizacao" element={<Location />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/conectar" element={<Login />} />

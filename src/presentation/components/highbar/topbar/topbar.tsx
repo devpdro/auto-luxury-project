@@ -13,6 +13,9 @@ export const Topbar = () => {
             <Link to="/">
               <li>Início</li>
             </Link>
+            <Link to="/reservas">
+              <li>Reservas</li>
+            </Link>
             <Link to="/localizacao">
               <li>Localização</li>
             </Link>

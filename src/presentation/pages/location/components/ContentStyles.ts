@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.primary};
-  padding: 4rem 0rem;
+  padding: 10rem 0rem;
 `;
 
 export const Width = styled.div`

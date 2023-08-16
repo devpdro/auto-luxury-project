@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.primary};
-  padding: 4rem 0rem;
+  padding: 9rem 0rem;
 `;
 
 export const Width = styled.div`
@@ -36,7 +36,7 @@ export const Information = styled.div`
 
 export const Text = styled.div`
   padding: 0rem 1rem;
-  width: 500px;
+  width: 38%;
   h3 {
     margin: 0rem 0rem 1rem 0rem;
     color: ${({ theme }) => theme.colors.tertiary};
@@ -44,20 +44,20 @@ export const Text = styled.div`
   input {
     width: 100%;
     margin: 0.4rem 0rem;
-    padding: 0.2rem 0.7rem;
+    padding: 0.4rem 0.7rem;
     border: 1px solid #7e7e7e;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: 5px;
   }
 
   textarea {
     width: 100%;
     margin: 0.4rem 0rem 0rem 0rem;
-    padding: 0.2rem 0.7rem;
+    padding: 0.4rem 0.7rem;
     border: 1px solid #7e7e7e;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: 5px;
     resize: none;
   }
@@ -68,7 +68,7 @@ export const Text = styled.div`
     border: 1px solid #7e7e7e;
     width: 100%;
     padding: 0.4rem 0rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     outline: none;
     border-radius: 5px;
     cursor: pointer;
