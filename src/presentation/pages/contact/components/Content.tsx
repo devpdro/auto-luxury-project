@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 import { yupResolver } from '@hookform/resolvers/yup';
+import { ICON } from 'presentation/assets';
 import * as yup from 'yup';
 
 import { Container, Width, Box, Information, Text } from './ContentStyles';
@@ -36,39 +37,51 @@ export const Content: React.FC = () => {
       <Width>
         <Box>
           <Information>
-            <h1>Informações de contato</h1>
-            <h4>Auto Luxury</h4>
-            <p>Rua 7, 1771 - Zona Central</p>
-            <p>CEP: 13500-200 - RIO CLARO/SP</p>
-            <p>(19) 99805-4440</p>
+            <h3>Informações de contato</h3>
+            <h2>Auto Luxury</h2>
+            <p>
+              <span>
+                <ICON.HiOutlineLocationMarker />
+              </span>
+              Rua Frederico Moura - Cidade Nova - CEP: 14401150 - Franca/SP
+            </p>
+            <p>
+              <span>
+                <ICON.AiOutlineWhatsApp />
+              </span>
+              (19) 99971-5982
+            </p>
           </Information>
           <Text>
-            <h1>Entre em contato</h1>
+            <h3>Formulário de Contato</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div>
-                <label>Nome:</label>
                 <Controller
                   name="name"
                   control={control}
-                  render={({ field }) => <input {...field} />}
+                  render={({ field }) => (
+                    <input {...field} placeholder="Nome" />
+                  )}
                 />
                 {errors.name && <p>{errors.name.message}</p>}
               </div>
               <div>
-                <label>Email:</label>
                 <Controller
                   name="email"
                   control={control}
-                  render={({ field }) => <input {...field} />}
+                  render={({ field }) => (
+                    <input {...field} placeholder="E-mail" />
+                  )}
                 />
                 {errors.email && <p>{errors.email.message}</p>}
               </div>
               <div>
-                <label>Mensagem:</label>
                 <Controller
                   name="message"
                   control={control}
-                  render={({ field }) => <textarea {...field} />}
+                  render={({ field }) => (
+                    <textarea {...field} placeholder="Mensagem" />
+                  )}
                 />
                 {errors.message && <p>{errors.message.message}</p>}
               </div>
