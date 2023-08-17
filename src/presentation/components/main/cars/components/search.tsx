@@ -6,9 +6,8 @@ import { Container, Width, Box, Details, Reserve } from './SearchStyles';
 
 interface Filters {
   make: string;
-  model: string;
   year: string;
-  price: string;
+  color: string;
 }
 
 interface SearchProps {
@@ -17,12 +16,11 @@ interface SearchProps {
 
 export const Search: React.FC<SearchProps> = ({ onSearch }) => {
   const [make, setMake] = useState('');
-  const [model, setModel] = useState('');
   const [year, setYear] = useState('');
-  const [price, setPrice] = useState('');
+  const [color, setColor] = useState('');
 
   const handleSearch = () => {
-    onSearch({ make, model, year, price });
+    onSearch({ make, year, color });
   };
 
   return (
@@ -33,28 +31,25 @@ export const Search: React.FC<SearchProps> = ({ onSearch }) => {
           <h1>Qual veículo você está procurando?</h1>
           <div>
             <Details
+              placeholder="Marca"
               type="text"
               name="make"
               value={make}
               onChange={(e) => setMake(e.target.value)}
             />
             <Details
-              type="text"
-              name="model"
-              value={model}
-              onChange={(e) => setModel(e.target.value)}
-            />
-            <Details
+              placeholder="Ano"
               type="text"
               name="year"
               value={year}
               onChange={(e) => setYear(e.target.value)}
             />
             <Details
-              type="number"
-              name="price"
-              value={price}
-              onChange={(e) => setPrice(e.target.value)}
+              placeholder="Cor"
+              type="text"
+              name="color"
+              value={color}
+              onChange={(e) => setColor(e.target.value)}
             />
             <Reserve type="button" onClick={handleSearch}>
               <span>

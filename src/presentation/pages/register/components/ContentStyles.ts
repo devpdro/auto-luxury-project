@@ -20,7 +20,7 @@ export const Box = styled.div`
   padding: 2rem;
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   p {
     margin-bottom: 0.8rem;
     font-size: 1rem;
@@ -42,6 +42,7 @@ export const Username = styled.div`
     border-radius: 5px;
     display: block;
     width: 100%;
+    background-color: red;
   }
 `;
 

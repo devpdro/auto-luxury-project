@@ -15,16 +15,21 @@ export const Content = () => {
     <Container>
       <Width>
         <Box>
-          <Form>
+          <form>
             <h1>Conectar</h1>
             <p>Entrar com e-mail e senha</p>
             <Email>
               <label htmlFor="email1">E-mail:</label>
-              <input type="email" name="email" id="email1" />
+              <input autoComplete="on" type="email" name="email" id="email1" />
             </Email>
             <Password>
-              <label htmlFor="password1">Senha</label>
-              <input type="password" name="password" id="password1" />
+              <label htmlFor="password1">Senha:</label>
+              <input
+                autoComplete="current-password"
+                type="password"
+                name="password"
+                id="password1"
+              />
             </Password>
             <h6>
               Ainda não possui uma conta?{' '}
@@ -38,7 +43,7 @@ export const Content = () => {
                 value="Conectar"
               />
             </Submit>
-          </Form>
+          </form>
         </Box>
       </Width>
     </Container>

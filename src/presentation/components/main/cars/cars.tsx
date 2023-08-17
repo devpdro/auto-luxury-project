@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { getCarImage } from 'presentation/assets';
+import { ICON } from 'presentation/assets';
 
 import {
   Container,
@@ -16,16 +17,66 @@ import { Filters } from './components/Search';
 
 interface Car {
   make: string;
-  model: string;
   year: number;
+  color: string;
   price: number;
 }
 
 const carData: Car[] = [
-  { make: 'Toyota', model: 'Corolla', year: 2022, price: 25000 },
-  { make: 'Porsche', model: 'Gol', year: 2021, price: 22000 },
-  { make: 'Gol', model: 'Civic', year: 2021, price: 22000 },
-  { make: 'Honda', model: 'Civic', year: 2021, price: 22000 },
+  {
+    make: 'Tesla',
+    year: 2022,
+    color: 'Branco',
+    price: 2800,
+  },
+  {
+    make: 'Tesla',
+    year: 2021,
+    color: 'Vermelho',
+    price: 2200,
+  },
+  {
+    make: 'Audi',
+    year: 2020,
+    color: 'Prata',
+    price: 1200,
+  },
+  {
+    make: 'Porsche',
+    year: 2019,
+    color: 'Azul-Escuro',
+    price: 1700,
+  },
+  {
+    make: 'Porsche',
+    year: 2017,
+    color: 'Preto',
+    price: 1400,
+  },
+  {
+    make: 'Porsche',
+    year: 2020,
+    color: 'Prata',
+    price: 1700,
+  },
+  {
+    make: 'Porsche',
+    year: 2022,
+    color: 'Preto-Fosco',
+    price: 2600,
+  },
+  {
+    make: 'Porsche',
+    year: 2021,
+    color: 'Azul-Claro',
+    price: 2000,
+  },
+  {
+    make: 'Porsche',
+    year: 2020,
+    color: 'Branco',
+    price: 2200,
+  },
 ];
 
 export const Cars: React.FC = () => {
@@ -34,10 +85,9 @@ export const Cars: React.FC = () => {
   const handleSearch = (filters: Filters) => {
     const filtered = carData.filter((car) => {
       return (
-        car.make.includes(filters.make) &&
-        car.model.includes(filters.model) &&
+        car.make.toLowerCase().includes(filters.make.toLowerCase()) &&
         (filters.year === '' || car.year === Number(filters.year)) &&
-        (filters.price === '' || car.price <= Number(filters.price))
+        car.color.toLowerCase().includes(filters.color.toLowerCase())
       );
     });
 
@@ -54,15 +104,30 @@ export const Cars: React.FC = () => {
               <Details key={index}>
                 <img
                   key={index}
-                  src={getCarImage(car.make)}
+                  src={getCarImage(`${car.make}-${car.color}`)}
                   alt={`Car ${index}`}
                 />
-                <h1>Tesla Malibu</h1>
-                <h5>Preço</h5>
+                <h1>{car.make}</h1>
+                <h5>R$ {car.price}/dia</h5>
                 <Text>
-                  <p>sasda</p>
-                  <p>asda</p>
-                  <p>asda</p>
+                  <h6>
+                    <span>
+                      <ICON.LiaCarSolid />
+                    </span>
+                    {car.make}
+                  </h6>
+                  <h6>
+                    <span>
+                      <ICON.IoColorPaletteOutline />
+                    </span>
+                    {car.color}
+                  </h6>
+                  <h6>
+                    <span>
+                      <ICON.BsCalendar2Date />
+                    </span>
+                    {car.year}
+                  </h6>
                 </Text>
                 <Button>Reservar</Button>
               </Details>

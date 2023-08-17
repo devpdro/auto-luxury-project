@@ -20,7 +20,7 @@ interface Car {
 }
 
 const carData: Car[] = [
-  { make: 'Toyota', model: 'Corolla', year: 2022, price: 25000 },
+  { make: 'Toyota' && 'toyota', model: 'Corolla', year: 2022, price: 25000 },
   { make: 'Porsche', model: 'Gol', year: 2021, price: 22000 },
   { make: 'Gol', model: 'Civic', year: 2021, price: 22000 },
   { make: 'Honda', model: 'Civic', year: 2021, price: 22000 },
