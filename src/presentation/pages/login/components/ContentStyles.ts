@@ -25,6 +25,9 @@ export const Form = styled.div`
     margin-bottom: 0.8rem;
     font-size: 1rem;
   }
+  h6 {
+    font-size: 0.9rem;
+  }
 `;
 
 export const Email = styled.div`
@@ -55,7 +58,7 @@ export const Password = styled.div`
     border: 2px solid #201e1e;
     outline: none;
     padding: 0.4rem 0.7rem;
-    margin: 0.2rem 0rem 2.5rem 0rem;
+    margin: 0.2rem 0rem 1rem 0rem;
     font-size: 1rem;
     border-radius: 5px;
     display: block;
@@ -65,6 +68,7 @@ export const Password = styled.div`
 
 export const Submit = styled.div`
   input {
+    margin-top: 0.5rem;
     color: ${({ theme }) => theme.colors.primary};
     border: 2px solid #201e1e;
     width: 100%;

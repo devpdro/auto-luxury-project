@@ -5,7 +5,7 @@ import {
   Navigate,
 } from 'react-router-dom';
 
-import { Theme } from 'main/providers/Theme';
+import { Theme } from 'main/providers/theme';
 import { Home, Reserve } from 'presentation/pages';
 import { Location } from 'presentation/pages';
 import { Contact } from 'presentation/pages';

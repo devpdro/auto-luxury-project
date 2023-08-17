@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import {
   Container,
   Width,
@@ -24,6 +26,10 @@ export const Content = () => {
               <label htmlFor="password1">Senha</label>
               <input type="password" name="password" id="password1" />
             </Password>
+            <h6>
+              Ainda não possui uma conta?{' '}
+              <Link to="/cadastrar">Registre-se</Link>
+            </h6>
             <Submit>
               <input
                 type="submit"

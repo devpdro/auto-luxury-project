@@ -29,15 +29,7 @@ export const Topbar = () => {
                 <span>
                   <ICON.FiArrowRightCircle />
                 </span>
-                <h4>Conectar</h4>
-              </div>
-            </Link>
-            <Link to="/cadastrar">
-              <div>
-                <span>
-                  <ICON.MdOutlinePerson />
-                </span>
-                <h4>Cadastrar</h4>
+                <h4>Entrar</h4>
               </div>
             </Link>
           </Login>

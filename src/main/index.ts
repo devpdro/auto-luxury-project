@@ -1,2 +1,3 @@
 export * from './routes/app-routes';
-export * from './providers/Theme';
+export * from './providers/theme';
+export * from './factories/services/firebase-config';
