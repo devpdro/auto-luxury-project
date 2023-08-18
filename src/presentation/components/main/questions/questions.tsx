@@ -21,8 +21,7 @@ export const Questions: React.FC = () => {
     {
       question:
         'Qual é a faixa de preços para alugar um carro de luxo por um dia?',
-      answer:
-        'Os preços podem variar de $500 a $2000 ou mais, dependendo do modelo.',
+      answer: 'Os preços podem variar de $1200 a $2800, dependendo do modelo.',
     },
     {
       question: 'É possível alugar um veículo de luxo com motorista?',

@@ -10,7 +10,7 @@ import {
   Details,
   Text,
   Button,
-} from './CarReservationStyles';
+} from './ReservationStyles';
 
 interface Car {
   make: string;
@@ -26,7 +26,7 @@ const carData: Car[] = [
   { make: 'Honda', model: 'Civic', year: 2021, price: 22000 },
 ];
 
-export const CarReservation: React.FC = () => {
+export const Reservation: React.FC = () => {
   return (
     <Container>
       <Width>

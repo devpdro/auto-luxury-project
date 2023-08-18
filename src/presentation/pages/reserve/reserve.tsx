@@ -1,12 +1,12 @@
 import { Footer } from 'presentation/components';
 import { Topbar } from 'presentation/components/highbar/topbar/Topbar';
-import { CarReservation } from 'presentation/components/main/cars/CarReservation';
+import { Reservation } from 'presentation/components/main/cars/reserve/Reservation';
 
 export const Reserve = () => {
   return (
     <div>
       <Topbar />
-      <CarReservation />
+      <Reservation />
       <Footer />
     </div>
   );

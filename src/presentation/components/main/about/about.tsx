@@ -46,7 +46,7 @@ export const About = () => {
                 <span>
                   <ICON.AiOutlineSchedule />
                 </span>
-                <h5>Agendamento Flexível</h5>
+                <h5>Reserva com praticidade</h5>
               </div>
               <div>
                 <span>
