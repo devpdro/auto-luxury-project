@@ -27,7 +27,7 @@ export const Information = () => {
               </div>
             </Reserve>
           </a>
-          <Link to="/localizacao">
+          <Link to="/location">
             <Location>
               <span>
                 <ICON.GiWorld />

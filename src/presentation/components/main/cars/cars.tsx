@@ -13,8 +13,7 @@ import {
   Text,
   Button,
 } from './CarsStyles';
-import { Search } from './components/Search';
-import { Filters } from './components/Search';
+import { Search, Filters } from './components/Search';
 
 interface Car {
   make: string;

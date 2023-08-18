@@ -39,13 +39,13 @@ export const Footer = () => {
                 <Link to="/inicio">
                   <li>Início</li>
                 </Link>
-                <Link to="/localizacao">
+                <Link to="/location">
                   <li>Localização</li>
                 </Link>
                 <Link to="/contato">
                   <li>Contato</li>
                 </Link>
-                <Link to="/conectar">
+                <Link to="/login">
                   <li>Conectar</li>
                 </Link>
                 <Link to="/cadastrar">
@@ -56,7 +56,7 @@ export const Footer = () => {
             <Contact>
               <h1>Onde estamos</h1>
               <ul>
-                <Link to="/localizacao">
+                <Link to="/location">
                   <li>
                     <span>
                       <ICON.HiOutlineLocationMarker />

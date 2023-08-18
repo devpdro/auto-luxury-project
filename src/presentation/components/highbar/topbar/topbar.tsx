@@ -11,12 +11,12 @@ export const Topbar = () => {
         <Box>
           <Navbar>
             <Link to="/">
-              <li>Início</li>
+              <li>Home</li>
             </Link>
             <Link to="/reservas">
               <li>Reservas</li>
             </Link>
-            <Link to="/localizacao">
+            <Link to="/location">
               <li>Localização</li>
             </Link>
             <Link to="/contato">
@@ -24,12 +24,12 @@ export const Topbar = () => {
             </Link>
           </Navbar>
           <Login>
-            <Link to="/conectar">
+            <Link to="/login">
               <div>
                 <span>
                   <ICON.FiArrowRightCircle />
                 </span>
-                <h4>Entrar</h4>
+                <h4>Login</h4>
               </div>
             </Link>
           </Login>

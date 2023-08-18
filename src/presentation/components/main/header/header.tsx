@@ -25,7 +25,7 @@ export const Header = () => {
             <a href="#cars">
               <Details type="submit" value="Exibir detalhes" />
             </a>
-            <Link to="/contato">
+            <Link to="/reservas">
               <Reserve type="submit" value="Reservar agora" />
             </Link>
           </Input>

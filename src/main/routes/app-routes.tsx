@@ -19,9 +19,9 @@ export const AppRoutes: React.FC = () => {
         <Routes>
           <Route path="/inicio" element={<Home />} />
           <Route path="/reservas" element={<Reserve />} />
-          <Route path="/localizacao" element={<Location />} />
+          <Route path="/location" element={<Location />} />
           <Route path="/contato" element={<Contact />} />
-          <Route path="/conectar" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/cadastrar" element={<Register />} />
           <Route path="*" element={<Navigate to="/inicio" />} />
         </Routes>

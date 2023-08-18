@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import { carData } from 'main';
 import { getCarImage } from 'presentation/assets';
+import { ICON } from 'presentation/assets';
 
+import { Search, Filters } from '../components/Search';
 import {
   Container,
   Width,
@@ -10,50 +13,136 @@ import {
   Details,
   Text,
   Button,
+  Launcher,
+  Progress,
+  Conclusion,
 } from './ReservationStyles';
 
 interface Car {
   make: string;
-  model: string;
   year: number;
+  color: string;
   price: number;
 }
 
-const carData: Car[] = [
-  { make: 'Toyota' && 'toyota', model: 'Corolla', year: 2022, price: 25000 },
-  { make: 'Porsche', model: 'Gol', year: 2021, price: 22000 },
-  { make: 'Gol', model: 'Civic', year: 2021, price: 22000 },
-  { make: 'Honda', model: 'Civic', year: 2021, price: 22000 },
-];
-
 export const Reservation: React.FC = () => {
+  const [filteredCars, setFilteredCars] = useState<Car[]>(carData);
+  const [showNotification, setShowNotification] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [isCompleted, setIsCompleted] = useState(false);
+  const [reservedIndex, setReservedIndex] = useState<number | null>(null);
+
+  const handleSearch = (filters: Filters) => {
+    const filtered = carData.filter((car) => {
+      return (
+        car.make.toLowerCase().includes(filters.make.toLowerCase()) &&
+        (filters.year === '' || car.year === Number(filters.year)) &&
+        car.color.toLowerCase().includes(filters.color.toLowerCase())
+      );
+    });
+
+    setFilteredCars(filtered);
+  };
+
+  const openLoading = (index: number) => {
+    setIsProcessing(true);
+    setShowNotification(true);
+
+    setTimeout(() => {
+      setIsCompleted(true);
+      setTimeout(() => {
+        setShowNotification(false);
+        setIsCompleted(false);
+
+        if (reservedIndex === index) {
+          setReservedIndex(null);
+        } else {
+          setReservedIndex(index);
+        }
+
+        setIsProcessing(false);
+      }, 2000);
+    }, 3000);
+  };
+
   return (
     <Container>
       <Width>
         <Box>
+          <Search onSearch={handleSearch} />
           <Options>
-            {carData.map((car, index) => (
+            {filteredCars.map((car, index) => (
               <Details key={index}>
                 <img
                   key={index}
-                  src={getCarImage(car.make)}
+                  src={getCarImage(`${car.make}-${car.color}`)}
                   alt={`Car ${index}`}
                 />
-                <h1>
-                  {car.make} {car.model}
-                </h1>
-                <h5>Preço: ${car.price}</h5>
+                <h1>{car.make}</h1>
+                <h5>R$ {car.price}/dia</h5>
                 <Text>
-                  <p>{car.make}</p>
-                  <p>{car.model}</p>
-                  <p>Ano: {car.year}</p>
+                  <h6>
+                    <span>
+                      <ICON.LiaCarSolid />
+                    </span>
+                    {car.make}
+                  </h6>
+                  <h6>
+                    <span>
+                      <ICON.IoColorPaletteOutline />
+                    </span>
+                    {car.color}
+                  </h6>
+                  <h6>
+                    <span>
+                      <ICON.BsCalendar2Date />
+                    </span>
+                    {car.year}
+                  </h6>
                 </Text>
-                <Button>Reservar</Button>
+                <Button
+                  onClick={() => openLoading(index)}
+                  className={reservedIndex === index ? 'cancel' : ''}
+                  disabled={isProcessing}
+                >
+                  {reservedIndex === index
+                    ? `Cancelar reserva`
+                    : `Reservar ${car.make}`}
+                </Button>
               </Details>
             ))}
           </Options>
         </Box>
       </Width>
+      {showNotification && <Launcher>{isProcessing && <div></div>}</Launcher>}
+      {showNotification && isProcessing && (
+        <Progress className={isCompleted ? 'slideExit' : ''}>
+          <div>
+            <h2>Por favor, aguarde...</h2>
+          </div>
+          {reservedIndex === null ? (
+            <p style={{ textAlign: 'center', color: '#fff' }}>
+              Verificando disponibilidade do carro...
+            </p>
+          ) : (
+            <p style={{ textAlign: 'center', color: '#fff' }}>
+              Cancelando a reserva do carro...
+            </p>
+          )}
+        </Progress>
+      )}
+      {showNotification && isCompleted && (
+        <Conclusion>
+          <div>
+            <h2>Sucesso!</h2>
+            <p>
+              {reservedIndex === null
+                ? 'Carro reservado, efetue o pagamento.'
+                : 'Reserva cancelada.'}
+            </p>
+          </div>
+        </Conclusion>
+      )}
     </Container>
   );
 };
