@@ -12,7 +12,7 @@ import {
   Email,
   Password,
   Submit,
-} from './ContentStyles';
+} from './RegisterStyles';
 
 export const Content = () => {
   const [email, setEmail] = useState('');

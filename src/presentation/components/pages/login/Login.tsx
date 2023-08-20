@@ -8,7 +8,7 @@ import {
   Email,
   Password,
   Submit,
-} from './ContentStyles';
+} from './LoginStyles';
 
 export const Content = () => {
   return (

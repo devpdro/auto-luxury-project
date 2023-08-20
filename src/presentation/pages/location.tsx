@@ -1,12 +1,13 @@
 import { Footer } from 'presentation/components';
 import { Topbar } from 'presentation/components/highbar/topbar/Topbar';
-import { Reservation } from 'presentation/components/main/cars/reserve/Reservation';
 
-export const Reserve = () => {
+import { Content } from './location/components/Content';
+
+export const Location = () => {
   return (
     <div>
       <Topbar />
-      <Reservation />
+      <Content />
       <Footer />
     </div>
   );
