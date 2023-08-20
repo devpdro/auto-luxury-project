@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 
 import { AppRoutes } from 'main';
 
-import { App } from './pages/app';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(

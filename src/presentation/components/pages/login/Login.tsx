@@ -15,7 +15,7 @@ export const Content = () => {
     <Container>
       <Width>
         <Box>
-          <form>
+          <Form>
             <h1>Conectar</h1>
             <p>Entrar com e-mail e senha</p>
             <Email>
@@ -43,7 +43,7 @@ export const Content = () => {
                 value="Conectar"
               />
             </Submit>
-          </form>
+          </Form>
         </Box>
       </Width>
     </Container>

@@ -1,4 +1,7 @@
-const express = require('express');
+import express from 'express';
+import { Request, Response } from 'express';
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const stripePackage = require('stripe');
 
 const stripe = stripePackage(
@@ -10,7 +13,7 @@ app.use(express.static('public'));
 
 const YOUR_DOMAIN = 'http://localhost:4242';
 
-app.post('/create-checkout-session', async (req, res) => {
+app.post('/create-checkout-session', async (req: Request, res: Response) => {
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],

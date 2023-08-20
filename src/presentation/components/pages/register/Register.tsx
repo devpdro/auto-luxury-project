@@ -17,7 +17,7 @@ import {
 export const Content = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword] =
     useCreateUserWithEmailAndPassword(auth);
 
   function handleSignOut(e: SyntheticEvent) {
@@ -29,7 +29,7 @@ export const Content = () => {
     <Container>
       <Width>
         <Box>
-          <form>
+          <Form>
             <h1> Cadastrar</h1>
             <p>Crie uma nova conta com seu nome de usuário, e-mail e senha</p>
             <Username>
@@ -65,7 +65,7 @@ export const Content = () => {
                 value="Cadastrar"
               />
             </Submit>
-          </form>
+          </Form>
         </Box>
       </Width>
     </Container>

@@ -2,7 +2,13 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 import { ICON } from 'presentation/assets';
 
-import { Container, Width, Box, Map, Text } from './ContentStyles';
+import {
+  Container,
+  Width,
+  Box,
+  Map,
+  Text,
+} from '../../../components/pages/location/LocationStyles';
 
 import 'leaflet/dist/leaflet.css';
 

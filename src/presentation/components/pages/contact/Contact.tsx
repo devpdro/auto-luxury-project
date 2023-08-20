@@ -5,7 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { ICON } from 'presentation/assets';
 import * as yup from 'yup';
 
-import { Container, Width, Box, Information, Text } from './ContentStyles';
+import { Container, Width, Box, Information, Text } from './ContactStyles';
 
 type FormData = {
   name: string;
