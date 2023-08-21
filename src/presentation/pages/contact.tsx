@@ -1,7 +1,6 @@
 import { Footer } from 'presentation/components';
 import { Topbar } from 'presentation/components/highbar/topbar/Topbar';
-
-import { Content } from '../components/pages/contact/Contact';
+import { Content } from 'presentation/components/index';
 
 export const Contact = () => {
   return (

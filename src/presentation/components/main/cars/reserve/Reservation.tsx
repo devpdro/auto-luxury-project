@@ -16,6 +16,7 @@ import {
   Launcher,
   Progress,
   Conclusion,
+  Reserve,
 } from './ReservationStyles';
 
 interface Car {
@@ -142,6 +143,12 @@ export const Reservation: React.FC = () => {
             </p>
           </div>
         </Conclusion>
+      )}
+      {reservedIndex !== null && (
+        <Reserve>
+          Carro reservado: {filteredCars[reservedIndex].make} {''}
+          {filteredCars[reservedIndex].color}
+        </Reserve>
       )}
     </Container>
   );

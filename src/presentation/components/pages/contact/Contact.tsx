@@ -51,6 +51,18 @@ export const Content: React.FC = () => {
               </span>
               (19) 99971-5982
             </p>
+            <p>
+              <span>
+                <ICON.BiTimeFive />
+              </span>
+              Segunda a Sexta-feira: 10h - 19h
+            </p>
+            <p>
+              <span>
+                <ICON.BiTimeFive />
+              </span>
+              Sábado e Domingo: Fechado
+            </p>
           </Information>
           <Text>
             <h3>Formulário de Contato</h3>

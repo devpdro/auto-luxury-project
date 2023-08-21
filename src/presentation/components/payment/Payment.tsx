@@ -2,26 +2,22 @@ import { useState, useEffect } from 'react';
 
 import PropTypes from 'prop-types';
 
+import { Container, Form, Button } from './PaymentStyles';
+
 interface MessageProps {
   message: string;
 }
 
 const ProductDisplay = () => (
-  <section>
-    <div className="product">
-      <img
-        src="https://i.imgur.com/EHyR2nP.png"
-        alt="The cover of Stubborn Attachments"
-      />
-      <div className="description">
-        <h3>Stubborn Attachments</h3>
-        <h5>$20.00</h5>
-      </div>
-    </div>
-    <form action="/create-checkout-session" method="POST">
-      <button type="submit">Checkout</button>
-    </form>
-  </section>
+  <Container>
+    <Form action="/create-checkout-session" method="POST">
+      <Button type="submit">Realizar o pagamento</Button>
+      <p>
+        A confirmação da inclusão do carro na reserva está garantida somente
+        após a realização do pagamento.
+      </p>
+    </Form>
+  </Container>
 );
 
 // eslint-disable-next-line react/prop-types

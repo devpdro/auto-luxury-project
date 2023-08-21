@@ -34,7 +34,7 @@ const slideExit = keyframes`
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.primary};
-  padding: 6.4rem 0rem 10rem 0rem;
+  padding: 6.4rem 0rem 0rem 0rem;
 `;
 
 export const Width = styled.div`
@@ -54,7 +54,7 @@ export const Options = styled.div`
 
 export const Details = styled.div`
   text-align: center;
-  margin: 0rem 1rem 2rem 1rem;
+  margin: 0rem 1rem 7rem 1rem;
   padding: 1.5rem 2rem 1rem 2rem;
   box-shadow:
     rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -177,4 +177,12 @@ export const Conclusion = styled.div`
       color: ${({ theme }) => theme.colors.secondary};
     }
   }
+`;
+
+export const Reserve = styled.div`
+  font-weight: 700;
+  margin-top: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

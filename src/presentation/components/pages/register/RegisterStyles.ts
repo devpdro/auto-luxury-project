@@ -42,7 +42,6 @@ export const Username = styled.div`
     border-radius: 5px;
     display: block;
     width: 100%;
-    background-color: red;
   }
 `;
 
