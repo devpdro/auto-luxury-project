@@ -9,8 +9,6 @@ import { Theme } from 'main/providers/theme';
 import { Home, Reserve } from 'presentation/pages';
 import { Location } from 'presentation/pages';
 import { Contact } from 'presentation/pages';
-import { Register } from 'presentation/pages';
-import { Login } from 'presentation/pages';
 
 export const AppRoutes: React.FC = () => {
   return (
@@ -21,8 +19,6 @@ export const AppRoutes: React.FC = () => {
           <Route path="/reservas" element={<Reserve />} />
           <Route path="/location" element={<Location />} />
           <Route path="/contato" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cadastrar" element={<Register />} />
           <Route path="*" element={<Navigate to="/inicio" />} />
         </Routes>
       </Router>

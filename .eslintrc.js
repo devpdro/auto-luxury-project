@@ -25,7 +25,7 @@ module.exports = {
     'import-helpers/order-imports': [
       'warn',
       {
-        newlinesBetween: 'always', // new line between groups
+        newlinesBetween: 'always',
         groups: ['/^react/', 'module', ['parent', 'sibling', 'index']],
         alphabetize: { order: 'asc', ignoreCase: true },
       },

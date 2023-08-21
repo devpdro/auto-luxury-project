@@ -1,5 +1,5 @@
-import { IMAGES } from 'presentation/assets';
-import { ICON } from 'presentation/assets';
+import { IMAGES } from 'presentation';
+import { ICON } from 'presentation';
 
 import {
   Container,

@@ -1,7 +1,7 @@
 import { About } from './about/About';
 import { Cars } from './cars/Cars';
-import { Header } from './header/Header';
-import { Questions } from './questions/Questions';
+import { Header } from './header';
+import { Questions } from './questions';
 
 export const Main = () => {
   return (

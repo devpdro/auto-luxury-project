@@ -1,11 +1,10 @@
-import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 import { yupResolver } from '@hookform/resolvers/yup';
-import { ICON } from 'presentation/assets';
+import { ICON } from 'presentation';
 import * as yup from 'yup';
 
-import { Container, Width, Box, Information, Text } from './ContactStyles';
+import { Container, Width, Box, Information, Text } from './ContactsStyles';
 
 type FormData = {
   name: string;
@@ -19,7 +18,7 @@ const schema = yup.object().shape({
   message: yup.string().required('Campo obrigatório'),
 });
 
-export const Content: React.FC = () => {
+export const Contacts: React.FC = () => {
   const {
     control,
     handleSubmit,

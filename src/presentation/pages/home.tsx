@@ -1,4 +1,6 @@
-import { Footer, Main, Navbar } from 'presentation/components';
+import { Footer } from 'presentation';
+import { Main } from 'presentation';
+import { Navbar } from 'presentation';
 
 export const Home = () => {
   return (

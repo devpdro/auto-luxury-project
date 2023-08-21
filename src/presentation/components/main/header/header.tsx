@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { IMAGES } from 'presentation/assets';
+import { IMAGES } from 'presentation';
 
 import {
   Container,
