@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { ICON } from 'presentation/assets';
-
-import { Container, Width, Box, Navbar, Login } from './TopbarStyles';
+import { Container, Width, Box, Navbar } from './TopbarStyles';
 
 export const Topbar = () => {
   return (
@@ -23,16 +21,6 @@ export const Topbar = () => {
               <li>Contato</li>
             </Link>
           </Navbar>
-          <Login>
-            <Link to="/login">
-              <div>
-                <span>
-                  <ICON.FiArrowRightCircle />
-                </span>
-                <h4>Login</h4>
-              </div>
-            </Link>
-          </Login>
         </Box>
       </Width>
     </Container>

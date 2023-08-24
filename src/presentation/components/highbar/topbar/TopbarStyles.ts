@@ -48,25 +48,3 @@ export const Navbar = styled.ul`
     }
   }
 `;
-
-export const Login = styled.div`
-  display: flex;
-  a {
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.primary};
-    div {
-      display: flex;
-      span {
-        padding-left: 1.4rem;
-      }
-      h4 {
-        padding-left: 0.2rem;
-      }
-      transition: all 0.4s ease;
-      &:hover {
-        color: ${({ theme }) => theme.colors.tertiary};
-        transform: scale(1.1);
-      }
-    }
-  }
-`;
