@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  color: ${({ theme }) => theme.colors.primary};
+  color: #1e1e1f;
   padding: 1rem 0;
   border-top: 2px solid #6550f3;
 `;
 
 export const Width = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Box = styled.div`
@@ -21,7 +21,7 @@ export const Box = styled.div`
 export const Text = styled.div`
   max-width: 700px;
   h1 {
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: #6550f3;
     display: flex;
     align-items: center;
     font-size: 1.8rem;
@@ -38,21 +38,21 @@ export const Links = styled.div`
   display: flex;
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.primary};
+    color: #1e1e1f;
   }
 `;
 
 export const Quicklinks = styled.div`
   h1 {
     font-size: 1.8rem;
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: #6550f3;
   }
   ul {
     list-style: none;
     li {
       transition: all 0.4s ease;
       &:hover {
-        color: ${({ theme }) => theme.colors.tertiary};
+        color: #6550f3;
         transform: scale(1.1);
       }
     }
@@ -67,14 +67,14 @@ export const Contact = styled.div`
   }
   h1 {
     font-size: 1.8rem;
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: #6550f3;
   }
   ul {
     list-style: none;
     li {
       transition: all 0.4s ease;
       &:hover {
-        color: ${({ theme }) => theme.colors.tertiary};
+        color: #6550f3;
         transform: scale(1.1);
       }
     }

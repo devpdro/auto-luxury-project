@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: #fff;
+  color: #1e1e1f;
   border-bottom: 2px solid #6550f3;
   font-weight: 700;
   position: fixed;
@@ -12,8 +12,8 @@ export const Container = styled.div`
 `;
 
 export const Width = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Box = styled.div`
@@ -35,15 +35,15 @@ export const Navbar = styled.ul`
     text-decoration: none;
     transition: all 0.4s ease;
     &:hover {
-      color: ${({ theme }) => theme.colors.tertiary};
+      color: #6550f3;
       transform: scale(1.1);
     }
     li {
-      color: ${({ theme }) => theme.colors.primary};
+      color: #1e1e1f;
       margin-left: 0.9rem;
       transition: all 0.4s ease;
       &:hover {
-        color: ${({ theme }) => theme.colors.tertiary};
+        color: #6550f3;
       }
     }
   }

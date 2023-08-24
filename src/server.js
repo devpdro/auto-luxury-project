@@ -10,7 +10,7 @@ const stripe = stripePackage(
 const app = express();
 app.use(express.static('public'));
 
-const YOUR_DOMAIN = 'http://localhost:4242';
+const YOUR_DOMAIN = 'http://localhost:3000';
 
 app.post('/create-checkout-session', async (req, res) => {
   try {
@@ -23,8 +23,8 @@ app.post('/create-checkout-session', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: `${YOUR_DOMAIN}?success=true`,
-      cancel_url: `${YOUR_DOMAIN}?canceled=true`,
+      success_url: `${YOUR_DOMAIN}/inicio?success=true`,
+      cancel_url: `${YOUR_DOMAIN}/reservas?canceled=true`,
     });
 
     res.redirect(303, session.url);

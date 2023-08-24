@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.colors.quinary};
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: #dedde3;
+  color: #1e1e1f;
   padding: 1.5rem 0;
 `;
 
 export const Width = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Title = styled.div`
   margin-top: 3.2rem;
   text-align: center;
   h4 {
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: #6550f3;
   }
   h1 {
     font-size: 2rem;
@@ -57,8 +57,8 @@ export const Information = styled.div`
       rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     transition: all 0.4s ease;
     &:hover {
-      background-color: ${({ theme }) => theme.colors.primary};
-      color: ${({ theme }) => theme.colors.tertiary};
+      background-color: #1e1e1f;
+      color: #6550f3;
       transform: scale(1.1);
     }
     span {
@@ -66,7 +66,7 @@ export const Information = styled.div`
       align-items: center;
       font-size: 1.5rem;
       padding-right: 0.5rem;
-      color: ${({ theme }) => theme.colors.tertiary};
+      color: #6550f3;
     }
     h5 {
       font-size: 1rem;

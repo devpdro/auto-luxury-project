@@ -1,4 +1,4 @@
-export * from './highbar';
+export * from './highbar/Navbar';
 export * from './main';
-export * from './footer/Footer';
+export * from './footer';
 export * from './pages/contact/Contacts';

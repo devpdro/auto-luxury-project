@@ -1,5 +1,5 @@
 import { Information } from './information/Information';
-import { Topbar } from './topbar/Topbar';
+import { Topbar } from './topbar';
 
 export const Navbar = () => {
   return (

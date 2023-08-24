@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.colors.quinary};
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: #dedde3;
+  color: #1e1e1f;
   padding: 1rem 0;
 `;
 
 export const Width = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Box = styled.div``;
@@ -60,8 +60,8 @@ export const Text = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.tertiary};
-  color: ${({ theme }) => theme.colors.secondary};
+  background-color: #6550f3;
+  color: #fff;
   border: 2px solid #6550f3;
   max-width: 200px;
   padding: 0.5rem 1rem;

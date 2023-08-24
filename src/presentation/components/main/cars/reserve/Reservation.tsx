@@ -17,6 +17,8 @@ import {
   Progress,
   Conclusion,
   Reserve,
+  Form,
+  ButtonSubmit,
 } from './ReservationStyles';
 
 interface Car {
@@ -146,8 +148,17 @@ export const Reservation: React.FC = () => {
       )}
       {reservedIndex !== null && (
         <Reserve>
-          Carro reservado: {filteredCars[reservedIndex].make} {''}
-          {filteredCars[reservedIndex].color}
+          <div>
+            Carro reservado: {filteredCars[reservedIndex].make} {''}
+            {filteredCars[reservedIndex].color}{' '}
+            <Form action="/create-checkout-session" method="POST">
+              <ButtonSubmit type="submit">Realizar o pagamento</ButtonSubmit>
+              <p>
+                A confirmação da inclusão do carro na reserva está garantida
+                somente após a realização do pagamento.
+              </p>
+            </Form>
+          </div>
         </Reserve>
       )}
     </Container>

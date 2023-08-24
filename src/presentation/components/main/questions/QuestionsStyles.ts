@@ -12,20 +12,20 @@ const fadeIn = keyframes`
 `;
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.colors.quinary};
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: #dedde3;
+  color: #1e1e1f;
   padding: 10rem 0rem;
 `;
 
 export const Width = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Title = styled.div`
   text-align: center;
   h4 {
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: #6550f3;
   }
   h1 {
     font-size: 2rem;

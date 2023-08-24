@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: #fff;
+  color: #1e1e1f;
   padding: 9rem 0rem;
 `;
 
 export const Width = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Box = styled.div`
@@ -19,7 +19,7 @@ export const Box = styled.div`
 
 export const Information = styled.div`
   h3 {
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: #6550f3;
     margin-bottom: 1rem;
   }
   h2 {
@@ -39,7 +39,7 @@ export const Text = styled.div`
   width: 38%;
   h3 {
     margin: 0rem 0rem 1rem 0rem;
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: #6550f3;
   }
   input {
     width: 100%;
@@ -64,7 +64,7 @@ export const Text = styled.div`
 
   button {
     margin: 0.8rem 0rem;
-    color: ${({ theme }) => theme.colors.primary};
+    color: #1e1e1f;
     border: 1px solid #7e7e7e;
     width: 100%;
     padding: 0.4rem 0rem;
@@ -75,8 +75,8 @@ export const Text = styled.div`
     font-weight: 700;
     transition: all 0.4s ease;
     &:hover {
-      background-color: ${({ theme }) => theme.colors.tertiary};
-      color: ${({ theme }) => theme.colors.secondary};
+      background-color: #6550f3;
+      color: #fff;
       transform: scale(1.1);
       font-weight: 300 !important;
       border: 1px solid #6550f3;

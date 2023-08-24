@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { carData } from 'main';
 import { getCarImage } from 'presentation/assets';
@@ -72,7 +73,9 @@ export const Cars: React.FC = () => {
                     {car.year}
                   </h6>
                 </Text>
-                <Button>Reservar</Button>
+                <Link to="/reservas">
+                  <Button>Reservar</Button>
+                </Link>
               </Details>
             ))}
           </Options>

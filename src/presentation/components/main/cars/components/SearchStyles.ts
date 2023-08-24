@@ -5,8 +5,8 @@ export const Container = styled.div`
 `;
 
 export const Width = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Box = styled.div`
@@ -20,7 +20,7 @@ export const Box = styled.div`
     justify-content: center;
   }
   h4 {
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: #6550f3;
   }
   h1 {
     margin-bottom: 2rem;
@@ -29,7 +29,7 @@ export const Box = styled.div`
 `;
 
 export const Details = styled.input`
-  color: ${({ theme }) => theme.colors.primary};
+  color: #1e1e1f;
   border: 2px solid #201e1e;
   max-width: 140px;
   padding: 0.5rem 1rem;
@@ -40,7 +40,7 @@ export const Details = styled.input`
 `;
 
 export const Reserve = styled.button`
-  color: ${({ theme }) => theme.colors.primary};
+  color: #1e1e1f;
   display: flex;
   align-items: center;
   border: 2px solid #201e1e;
@@ -54,8 +54,8 @@ export const Reserve = styled.button`
   font-weight: 700;
   transition: all 0.4s ease;
   &:hover {
-    background-color: ${({ theme }) => theme.colors.tertiary};
-    color: ${({ theme }) => theme.colors.secondary};
+    background-color: #6550f3;
+    color: #fff;
     transform: scale(1.1);
     font-weight: 300 !important;
     border: 2px solid #6550f3;

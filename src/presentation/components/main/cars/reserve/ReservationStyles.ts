@@ -32,14 +32,14 @@ const slideExit = keyframes`
 `;
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: #fff;
+  color: #1e1e1f;
   padding: 6.4rem 0rem 0rem 0rem;
 `;
 
 export const Width = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Box = styled.div``;
@@ -91,8 +91,8 @@ export const Text = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.tertiary};
-  color: ${({ theme }) => theme.colors.secondary};
+  background-color: #6550f3;
+  color: #fff;
   border: 2px solid #6550f3;
   max-width: 200px;
   padding: 0.5rem 1rem;
@@ -148,9 +148,9 @@ export const Progress = styled.div`
   }
   div {
     text-align: center;
-    color: ${({ theme }) => theme.colors.secondary};
+    color: #fff;
     p {
-      color: ${({ theme }) => theme.colors.secondary};
+      color: #fff;
     }
     h6 {
       color: red;
@@ -172,9 +172,9 @@ export const Conclusion = styled.div`
   border-radius: 15px;
   div {
     text-align: center;
-    color: ${({ theme }) => theme.colors.secondary};
+    color: #fff;
     p {
-      color: ${({ theme }) => theme.colors.secondary};
+      color: #fff;
     }
   }
 `;
@@ -185,4 +185,36 @@ export const Reserve = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+`;
+
+export const Form = styled.form`
+  margin: 0rem 0rem 8rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    text-align: center;
+  }
+`;
+
+export const ButtonSubmit = styled.button`
+  background-color: #6550f3;
+  color: #fff;
+  border: 2px solid #6550f3;
+  width: 50%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  margin: 0rem auto;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;

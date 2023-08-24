@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.colors.quinary};
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: #dedde3;
+  color: #1e1e1f;
   padding: 6rem 0;
 `;
 
 export const Width = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Box = styled.div`
@@ -44,8 +44,8 @@ export const Input = styled.div`
 `;
 
 export const Details = styled.input`
-  background-color: ${({ theme }) => theme.colors.quinary};
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: #dedde3;
+  color: #1e1e1f;
   outline: none;
   margin-right: 1rem;
   padding: 0.6rem 1.3rem;
@@ -54,16 +54,16 @@ export const Details = styled.input`
   transition: all 0.4s ease;
   font-weight: 700;
   &:hover {
-    background-color: ${({ theme }) => theme.colors.tertiary};
-    color: ${({ theme }) => theme.colors.secondary};
+    background-color: #6550f3;
+    color: #fff;
     transform: scale(1.1);
     font-weight: 300 !important;
   }
 `;
 
 export const Reserve = styled.input`
-  background-color: ${({ theme }) => theme.colors.tertiary};
-  color: ${({ theme }) => theme.colors.secondary};
+  background-color: #6550f3;
+  color: #fff;
   padding: 0.6rem 1.3rem;
   border-radius: 25px;
   border: 2px solid #6550f3;

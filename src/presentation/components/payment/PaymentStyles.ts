@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: ${({ theme }) => theme.width.standard};
-  margin: ${({ theme }) => theme.width.margin};
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 export const Form = styled.form`
@@ -20,8 +20,8 @@ export const Form = styled.form`
 `;
 
 export const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.tertiary};
-  color: ${({ theme }) => theme.colors.secondary};
+  background-color: #6550f3;
+  color: #fff;
   margin: 0rem 0rem;
   border: 1px solid #6550f3;
   width: 65%;

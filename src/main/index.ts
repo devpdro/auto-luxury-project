@@ -1,3 +1,3 @@
-export * from './routes/app-routes';
-export * from './providers/theme';
-export * from './factories/data/carData';
+export * from './routes';
+export * from './providers/ThemeStyles';
+export * from './data';
