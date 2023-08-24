@@ -4,6 +4,7 @@ export const Container = styled.div`
   background-color: #dedde3;
   color: #1e1e1f;
   padding: 6rem 0;
+  font-family: 'Poppins', 'Helvetica';
 `;
 
 export const Width = styled.div`

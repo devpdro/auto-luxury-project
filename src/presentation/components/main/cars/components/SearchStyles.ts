@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 1rem 0rem;
+  font-family: 'Poppins', 'Helvetica';
 `;
 
 export const Width = styled.div`

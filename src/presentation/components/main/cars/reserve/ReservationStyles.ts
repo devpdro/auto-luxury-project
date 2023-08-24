@@ -35,6 +35,7 @@ export const Container = styled.div`
   background-color: #fff;
   color: #1e1e1f;
   padding: 6.4rem 0rem 0rem 0rem;
+  font-family: 'Poppins', 'Helvetica';
 `;
 
 export const Width = styled.div`

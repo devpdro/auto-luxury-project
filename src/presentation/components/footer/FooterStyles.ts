@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   color: #1e1e1f;
   padding: 1rem 0;
+  font-family: 'Poppins', 'Helvetica';
   border-top: 2px solid #6550f3;
 `;
 

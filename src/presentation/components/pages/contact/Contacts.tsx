@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -19,6 +20,8 @@ const schema = yup.object().shape({
 });
 
 export const Content: React.FC = () => {
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
   const {
     control,
     handleSubmit,
@@ -29,6 +32,7 @@ export const Content: React.FC = () => {
 
   const onSubmit = (data: FormData) => {
     console.log(data);
+    setFormSubmitted(true);
   };
 
   return (
@@ -65,39 +69,46 @@ export const Content: React.FC = () => {
           </Information>
           <Text>
             <h3>Formulário de Contato</h3>
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <div>
-                <Controller
-                  name="name"
-                  control={control}
-                  render={({ field }) => (
-                    <input {...field} placeholder="Nome" />
-                  )}
-                />
-                {errors.name && <p>{errors.name.message}</p>}
-              </div>
-              <div>
-                <Controller
-                  name="email"
-                  control={control}
-                  render={({ field }) => (
-                    <input {...field} placeholder="E-mail" />
-                  )}
-                />
-                {errors.email && <p>{errors.email.message}</p>}
-              </div>
-              <div>
-                <Controller
-                  name="message"
-                  control={control}
-                  render={({ field }) => (
-                    <textarea {...field} placeholder="Mensagem" />
-                  )}
-                />
-                {errors.message && <p>{errors.message.message}</p>}
-              </div>
-              <button type="submit">Enviar</button>
-            </form>
+            {formSubmitted ? (
+              <p style={{ color: 'green' }}>
+                Recebemos o seu formulário com sucesso! Em breve, entraremos em
+                contato em resposta à sua mensagem.
+              </p>
+            ) : (
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div>
+                  <Controller
+                    name="name"
+                    control={control}
+                    render={({ field }) => (
+                      <input {...field} placeholder="Nome" />
+                    )}
+                  />
+                  {errors.name && <p>{errors.name.message}</p>}
+                </div>
+                <div>
+                  <Controller
+                    name="email"
+                    control={control}
+                    render={({ field }) => (
+                      <input {...field} placeholder="E-mail" />
+                    )}
+                  />
+                  {errors.email && <p>{errors.email.message}</p>}
+                </div>
+                <div>
+                  <Controller
+                    name="message"
+                    control={control}
+                    render={({ field }) => (
+                      <textarea {...field} placeholder="Mensagem" />
+                    )}
+                  />
+                  {errors.message && <p>{errors.message.message}</p>}
+                </div>
+                <button type="submit">Enviar</button>
+              </form>
+            )}
           </Text>
         </Box>
       </Width>

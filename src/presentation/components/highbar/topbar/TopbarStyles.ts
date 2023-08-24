@@ -9,6 +9,7 @@ export const Container = styled.div`
   width: 100vw;
   z-index: 999;
   padding: 1.5rem 0rem;
+  font-family: 'Poppins', 'Helvetica';
 `;
 
 export const Width = styled.div`
