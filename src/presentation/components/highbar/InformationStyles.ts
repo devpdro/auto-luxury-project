@@ -16,7 +16,8 @@ export const Box = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5.5rem;
+  flex-wrap: wrap;
+  margin-top: 4.5rem;
   a {
     text-decoration: none;
     color: #1e1e1f;
