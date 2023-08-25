@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: #dedde3;
   color: #1e1e1f;
-  padding: 1.2rem 0rem 0rem 0rem;
+  padding: 1.7rem 0rem 0rem 0rem;
   font-family: 'Poppins', 'Helvetica';
 `;
 
@@ -16,7 +16,7 @@ export const Box = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 5.5rem;
   a {
     text-decoration: none;
     color: #1e1e1f;

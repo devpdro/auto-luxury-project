@@ -14,7 +14,7 @@ import {
   Text,
   Button,
 } from './CarsStyles';
-import { Search, Filters } from './components/Search';
+import { Search, Filters } from './Search';
 
 interface Car {
   make: string;

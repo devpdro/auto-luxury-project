@@ -4,7 +4,6 @@ import { carData } from 'main';
 import { getCarImage } from 'presentation/assets';
 import { ICON } from 'presentation/assets';
 
-import { Search, Filters } from '../components/Search';
 import {
   Container,
   Width,
@@ -20,6 +19,8 @@ import {
   Form,
   ButtonSubmit,
 } from './ReservationStyles';
+import { Search } from './Search';
+import { Filters } from './Search';
 
 interface Car {
   make: string;
