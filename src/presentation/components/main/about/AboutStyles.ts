@@ -24,14 +24,28 @@ export const Title = styled.div`
 `;
 
 export const Box = styled.div`
+  padding: 0 1rem;
   margin: 9rem 0rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 1280px) {
+    padding: 0 2rem;
+    justify-content: center !important;
+  }
 `;
 
 export const Text = styled.div`
   max-width: 700px;
+  @media (max-width: 800px) {
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
   h1 {
     font-size: 1.7rem;
   }
@@ -43,6 +57,7 @@ export const Text = styled.div`
 export const Information = styled.div`
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 2rem;
   display: flex;
   div {
@@ -52,7 +67,7 @@ export const Information = styled.div`
     padding-left: 3rem;
     margin: 1rem;
     padding: 1rem;
-    width: 45%;
+    width: 42%;
     box-shadow:
       rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
       rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -75,4 +90,10 @@ export const Information = styled.div`
   }
 `;
 
-export const Img = styled.div``;
+export const Img = styled.div`
+  @media (max-width: 1280px) {
+    img {
+      display: none;
+    }
+  }
+`;

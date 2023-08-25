@@ -19,6 +19,7 @@ export const Box = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
   h4 {
     color: #6550f3;
@@ -35,7 +36,7 @@ export const Details = styled.input`
   max-width: 140px;
   padding: 0.5rem 1rem;
   outline: none;
-  margin: 0rem 1rem 5.5rem 1rem;
+  margin: 0rem 1rem 1rem 1rem;
   font-size: 1rem;
   border-radius: 5px;
 `;
@@ -48,7 +49,7 @@ export const Reserve = styled.button`
   max-width: 200px;
   padding: 0.5rem 1rem;
   outline: none;
-  margin: 0rem 1rem 5.5rem 1rem;
+  margin: 0rem 1rem 1rem 1rem;
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;

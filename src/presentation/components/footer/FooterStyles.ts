@@ -16,11 +16,21 @@ export const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 2rem;
   margin: 2.5rem 0rem;
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 1099px) {
+    justify-content: center !important;
+  }
 `;
 
 export const Text = styled.div`
   max-width: 700px;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
   h1 {
     color: #6550f3;
     display: flex;
@@ -36,6 +46,12 @@ export const Text = styled.div`
 `;
 
 export const Links = styled.div`
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 1099px) {
+    justify-content: space-between;
+  }
   display: flex;
   a {
     text-decoration: none;
@@ -61,7 +77,10 @@ export const Quicklinks = styled.div`
 `;
 
 export const Contact = styled.div`
-  padding-left: 5rem;
+  @media (min-width: 1280px) {
+    padding-left: 3.5rem !important;
+  }
+  padding-left: 1rem;
   span {
     font-size: 1rem;
     padding-right: 0.5rem;

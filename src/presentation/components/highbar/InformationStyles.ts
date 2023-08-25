@@ -13,11 +13,15 @@ export const Width = styled.div`
 `;
 
 export const Box = styled.div`
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 4.5rem;
+  @media (max-width: 800px) {
+    display: none;
+  }
   a {
     text-decoration: none;
     color: #1e1e1f;

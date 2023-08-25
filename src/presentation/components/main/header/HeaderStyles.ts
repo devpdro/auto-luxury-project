@@ -18,9 +18,23 @@ export const Box = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
+  div {
+    @media (max-width: 800px) {
+      img {
+        padding: 0 1.5rem;
+        width: 100%;
+      }
+    }
+  }
 `;
 
 export const Text = styled.div`
+  @media (max-width: 800px) {
+    padding: 0 1rem;
+    h1 {
+      font-size: 3.1rem !important;
+    }
+  }
   h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

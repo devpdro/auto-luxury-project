@@ -12,12 +12,23 @@ export const Width = styled.div`
 `;
 
 export const Box = styled.div`
+  padding: 0 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 9rem 0rem 5rem 0rem;
+  align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const Information = styled.div`
+  padding-right: 0.5rem;
+  @media (max-width: 1000px) {
+    text-align: center;
+    margin-bottom: 1rem;
+    p {
+      text-align: left;
+    }
+  }
   h3 {
     color: #6550f3;
     margin-bottom: 1rem;
@@ -35,6 +46,12 @@ export const Information = styled.div`
 `;
 
 export const Text = styled.div`
+  @media (max-width: 1000px) {
+    width: 70% !important;
+  }
+  @media (max-width: 800px) {
+    width: 100% !important;
+  }
   padding: 0rem 1rem;
   width: 38%;
   h3 {

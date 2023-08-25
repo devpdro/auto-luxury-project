@@ -18,6 +18,7 @@ export const Width = styled.div`
 `;
 
 export const Box = styled.div`
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
