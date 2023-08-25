@@ -1,5 +1,5 @@
 import { Footer } from 'presentation/components';
-import { Topbar } from 'presentation/components/highbar/topbar';
+import { Topbar } from 'presentation/components/highbar';
 
 import { Content } from '../components/pages/location/Location';
 

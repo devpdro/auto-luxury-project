@@ -1,5 +1,5 @@
 import { Footer } from 'presentation/components';
-import { Topbar } from 'presentation/components/highbar/topbar';
+import { Topbar } from 'presentation/components/highbar';
 import { Reservation } from 'presentation/components/main/cars/reserve/Reservation';
 import App from 'presentation/components/payment/Payment';
 
