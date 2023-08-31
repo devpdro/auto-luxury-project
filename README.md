@@ -3,32 +3,38 @@
 You can access it with this [link.](https://auto-luxury-project.vercel.app/inicio)
 
 # 💻 About the project 
-The project consists of an E-commerce for Books, providing users with a friendly and intuitive experience to browse the store, register, add items to the cart and complete their purchases.
+The project revolves around a Luxury Car Reservation platform, offering users a seamless and user-friendly experience to explore the fleet, select desired vehicles for reservation, and finalize their bookings.
 
 # ⏫ Some features worth highlighting
 
-- User registration and authentication system using Firebase Authentication. Users can create an account, log in and access restricted areas of the website.
-- Shopping cart allowing users to add books and track quantity and total price of selected items before checking out.
-- Search bar that allows users to search for specific books in the store. The implementation of this search feature makes the user experience more agile and efficient, facilitating the location of desired books among the virtual store's catalog.
-- PayPal API integration in the checkout process.
-- Sending an email on the form with validation.
+- Car Filtering: We've implemented a search functionality that allows users to filter cars by brand, year, and color. This makes it easy to find the desired car according to their preferences.
+- Integration with Stripe API: To provide a secure and convenient payment method, we've integrated the Stripe API. Now, users can make payments for their chosen car directly through the platform, using reliable payment methods.
+- Enhanced User Experience: Our focus has been on creating an intuitive and user-friendly interface. This ensures that users can navigate the platform effortlessly, view detailed car information, and complete their reservations without complications.
+
+# ⏫ Some future features
+
+- User Login and Registration System: We plan to implement a robust user login and registration system. This will allow users to create personalized accounts, access their individual control panel, and easily track their past and current reservations.
+- Real-time Notifications: We intend to implement real-time notifications to keep users informed about new available cars, special offers, and important updates related to their reservations.
 
 # 🚀 Technologies 
 Auto Luxury was developed using the following technologies:
 
-- SCSS
+- Styled components
 - React.js
-- JavaScript
-- Firebase (for authentication service)
+- TypeScript
+- Node.js
+- Express.js
+- Stripe
 - Vercel (hosting platform)
 
 # 🔨 Used libraries 
 
 - React Icons
-- Sweetalert2
-- React-router
-- React-helmet
-- Emailjs-com
+- React-leaflet
+- React-router-dom
+- React-stripe-checkout
+- Styled components
+- Yup
 
 # 🛠️ How to install the project on your machine
 To install and run the project, follow the steps below:
