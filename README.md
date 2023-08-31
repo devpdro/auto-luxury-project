@@ -37,7 +37,7 @@ Auto Luxury was developed using the following technologies:
 - Yup
 
 # ⚠️ Important warning
-Currently, the front-end hosting of the website has been successfully completed and it is already accessible through the following URL: [[link.](https://auto-luxury-project.vercel.app/inicio). However, it is important to mention that the back-end has not yet been hosted. But soon the backend hosting will be available for access.
+Currently, the front-end hosting of the website has been successfully completed and it is already accessible through the following URL: [link.](https://auto-luxury-project.vercel.app/inicio) However, it is important to mention that the back-end has not yet been hosted. But soon the backend hosting will be available for access.
 
 # 🛠️ How to install the project on your machine
 To install and run the project, follow the steps below:
