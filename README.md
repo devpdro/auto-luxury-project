@@ -57,7 +57,7 @@ git clone https://github.com/devpdro/auto-luxury-project.git
 - Navigate to the project directory:
 
 ```bash
-cd bookworm-project
+cd auto-luxury-project
 ```
 
 - Install the project's dependencies:
@@ -73,3 +73,5 @@ npm install
 ```bash
 npm start
 ```
+
+Made with ❤️ by Victor Hugo 👋
